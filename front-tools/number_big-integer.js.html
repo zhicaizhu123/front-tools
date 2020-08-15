@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>number/big-integer.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <li class="nav-link nav-home-link"><a href="index.html">Home</a></li><li class="nav-heading">Classes</li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="BigNumber.html">BigNumber</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="module-OSSImageUrl-TzOssImage.html">TzOssImage</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Observer.html">Observer</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Observer.html#emit">emit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Observer.html#on">on</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Observer.html#remove">remove</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Screenfull.html">Screenfull</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#exit">exit</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#off">off</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#on">on</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#onChange">onChange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#onError">onError</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#request">request</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Screenfull.html#toggle">toggle</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="SessionStorage.html">SessionStorage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SessionStorage.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SessionStorage.html#getItem">getItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SessionStorage.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SessionStorage.html#removeItem">removeItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SessionStorage.html#saveState">saveState</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="SessionStorage.html#setItem">setItem</a></span></li><li class="nav-heading"><span class="nav-item-type type-class">C</span><span class="nav-item-name"><a href="Storage.html">Storage</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Storage.html#clear">clear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Storage.html#getItem">getItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Storage.html#init">init</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Storage.html#removeItem">removeItem</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Storage.html#saveState">saveState</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="Storage.html#setItem">setItem</a></span></li><li class="nav-heading">Modules</li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Array.html">Array</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.array2Object">array2Object</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.array2Tree">array2Tree</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.arrayLike2Array">arrayLike2Array</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.chunk">chunk</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.compact">compact</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.countBy">countBy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.countByValue">countByValue</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.deepFlatten">deepFlatten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.difference">difference</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.differenceAll">differenceAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.flatten">flatten</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.getTreeChains">getTreeChains</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.indexOfAll">indexOfAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.intersection">intersection</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.intersectionAll">intersectionAll</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.isArrayLike">isArrayLike</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.sample">sample</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.shuffe">shuffe</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.tree2Array">tree2Array</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.union">union</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#.unique">unique</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#~forEach">forEach</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#~forEachRight">forEachRight</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Array.html#~forEachType">forEachType</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Cookie.html">Cookie</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Date.html">Date</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.formatDate">formatDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.formatDuration">formatDuration</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.formatMs">formatMs</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.formatMsToTime">formatMsToTime</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.getDateRange">getDateRange</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.isLeapYear">isLeapYear</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Date.html#.isSmallMonth">isSmallMonth</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Event.html">Event</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Event.html#.addResizeListener">addResizeListener</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Event.html#.removeResizeListener">removeResizeListener</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-HTML.html">HTML</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.addClass">addClass</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.elementContains">elementContains</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.getElement">getElement</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.getElementOffsetTop">getElementOffsetTop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.getStyle">getStyle</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.hasClass">hasClass</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.removeClass">removeClass</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.scrollTo">scrollTo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.scrollToBottom">scrollToBottom</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.scrollToTarget">scrollToTarget</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#.scrollToTop">scrollToTop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-HTML.html#~checkClassNameType">checkClassNameType</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Number.html">Number</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.average">average</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.max">max</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.min">min</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.sortAsc">sortAsc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.sortDesc">sortDesc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.sum">sum</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.toCurrency">toCurrency</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#.toFixed">toFixed</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#~args2Array">args2Array</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Number.html#~sort">sort</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Object.html">Object</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#.clone">clone</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#.deepClone">deepClone</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#.extend">extend</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#.keepKeys">keepKeys</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#.removeKeys">removeKeys</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#.replaceKeys">replaceKeys</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Object.html#~filterKeys">filterKeys</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-OSSImageUrl.html">OSSImageUrl</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-OSSImageUrl.html#~tzOssImage">tzOssImage</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Rules.html">Rules</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isAndroid">isAndroid</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isCharacters">isCharacters</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isChrome">isChrome</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isDevice">isDevice</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isEMail">isEMail</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isFirefox">isFirefox</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isIdCard">isIdCard</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isIOS">isIOS</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isIPad">isIPad</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isLandline">isLandline</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isLink">isLink</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isMicroMessenger">isMicroMessenger</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isMobile">isMobile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isPc">isPc</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isPost">isPost</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isQQ">isQQ</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isQQBrowser">isQQBrowser</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isRule">isRule</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isSafari">isSafari</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isTel">isTel</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isWechat">isWechat</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#.isWeibo">isWeibo</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Rules.html#~isPlatform">isPlatform</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-String.html">String</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#.camelize">camelize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#.dasherize">dasherize</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#.escapeHtml">escapeHtml</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#.getAttrFromHtmlString">getAttrFromHtmlString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#.getPureTextFromHtmlString">getPureTextFromHtmlString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#.getTagfromHtmlString">getTagfromHtmlString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#~getAttrsReg">getAttrsReg</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-String.html#~getResultByAttr">getResultByAttr</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Type.html">Type</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isArguments">isArguments</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isArray">isArray</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isDate">isDate</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isElement">isElement</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isEmpty">isEmpty</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isEmptyObject">isEmptyObject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isError">isError</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isFunction">isFunction</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isMap">isMap</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isNaN">isNaN</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isNull">isNull</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isNumber">isNumber</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isObject">isObject</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isPromise">isPromise</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isRegExp">isRegExp</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isSet">isSet</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isString">isString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isSymbol">isSymbol</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isType">isType</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Type.html#.isUndefined">isUndefined</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Url.html">Url</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Url.html#.addParam2Url">addParam2Url</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Url.html#.getJson2Param">getJson2Param</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Url.html#.getParam2Json">getParam2Json</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Url.html#.getUrlParam">getUrlParam</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Url.html#.removeParamFromUrl">removeParamFromUrl</a></span></li><li class="nav-heading"><span class="nav-item-type type-module">M</span><span class="nav-item-name"><a href="module-Utils.html">Utils</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.cancelAnimationFrame">cancelAnimationFrame</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.compose">compose</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.copy">copy</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.dataURLtoFile">dataURLtoFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.debounce">debounce</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.delay">delay</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.downloadFile">downloadFile</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.loadJs">loadJs</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.noop">noop</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.randomString">randomString</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.requestAnimationFrame">requestAnimationFrame</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="module-Utils.html#.to">to</a></span></li><li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#localStore">localStore</a></span></li><li class="nav-item"><span class="nav-item-type type-function">F</span><span class="nav-item-name"><a href="global.html#sessionStore">sessionStore</a></span></li>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">number/big-integer.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>const testDigit = function (digit) {
+  return /^\d$/.test(digit);
+};
+
+const abs = function (number) {
+  if (typeof number === "undefined") {
+    return;
+  }
+  const bigNumber = BigNumber(number);
+  bigNumber.sign = 1;
+  return bigNumber;
+};
+
+const isValidType = function (number) {
+  return [
+    typeof number === "number",
+    typeof number === "string" &amp;&amp; number.length > 0,
+    Array.isArray(number) &amp;&amp; number.length > 0,
+    number instanceof BigNumber,
+  ].some((bool) => bool === true);
+};
+
+const errors = {
+  invalid: "Invalid Number",
+  divisionZero: "Division By Zero",
+};
+
+/**
+ * BigNumber 大数字处理类
+ *
+ * @class
+ * @param {*} initialNumber
+ * @return {*}
+ */
+function BigNumber(initialNumber) {
+  if (!(this instanceof BigNumber)) {
+    return new BigNumber(initialNumber);
+  }
+
+  this.number = [];
+  this.sign = 1;
+  this.rest = 0;
+
+  if (!isValidType(initialNumber)) {
+    this.number = errors["invalid"];
+    return;
+  }
+
+  if (Array.isArray(initialNumber)) {
+    if (initialNumber.length &amp;&amp; ["+", "-"].includes(initialNumber[0])) {
+      this.sign = initialNumber[0] === "+" ? 1 : -1;
+      initialNumber.shift(0);
+    }
+    for (let index = initialNumber.length - 1; index >= 0; index--) {
+      if (!this.addDigit(initialNumber[index])) return;
+    }
+  } else {
+    initialNumber = initialNumber.toString();
+    const first = initialNumber.charAt(0);
+    if (["+", "-"].includes(first)) {
+      this.sign = first === "+" ? 1 : -1;
+      initialNumber = initialNumber.substring(1);
+    }
+
+    for (let index = initialNumber.length - 1; index >= 0; index--) {
+      if (!this.addDigit(parseInt(initialNumber.charAt(index), 10))) {
+        return;
+      }
+    }
+  }
+}
+
+BigNumber.prototype = {
+  addDigit(digit) {
+    if (!testDigit(digit)) {
+      this.number = errors["invalid"];
+      return false;
+    }
+    this.number.push(digit);
+    return this;
+  },
+  isEven() {
+    return this.number[0] % 2 === 0;
+  },
+  _compare(number) {
+    if (!isValidType(number)) return null;
+    const bigNumber = BigNumber(number);
+
+    if (this.sign !== bigNumber.sign) return this.sign;
+
+    let offset = this.number.length - bigNumber.number.length;
+    if (offset !== 0) return (this.sign * offset) / Math.abs(offset);
+
+    for (let index = this.number.length - 1; index >= 0; index--) {
+      offset = this.number[index] - bigNumber.number[index];
+      if (offset !== 0) return (this.sign * offset) / Math.abs(offset);
+    }
+
+    return 0;
+  },
+  gt(number) {
+    return this._compare(number) > 0;
+  },
+
+  gte(number) {
+    return this._compare(number) >= 0;
+  },
+
+  equals(number) {
+    return this._compare(number) === 0;
+  },
+
+  lte(number) {
+    return this._compare(number) &lt;= 0;
+  },
+
+  lt(number) {
+    return this._compare(number) &lt; 0;
+  },
+
+  add(number) {
+    if (typeof number === "undefined") return this;
+    const bigNumber = BigNumber(number);
+
+    if (this.sign !== bigNumber.sign) {
+      const numbers = [bigNumber, this];
+      const index = this.sign > 0 ? [0, 1] : [1, 0];
+      numbers[index[0]].sign = 1;
+      return numbers[index[1]].minus(numbers[index[0]]);
+    }
+
+    this.number = BigNumber._add(this, bigNumber);
+    return this;
+  },
+
+  subtract(number) {
+    if (typeof number === "undefined") return this;
+    const bigNumber = BigNumber(number);
+    if (this.sign !== bigNumber.sign) {
+      this.number = BigNumber._add(this, bigNumber);
+      return this;
+    }
+    this.sign = this.lt(bigNumber) ? -1 : 1;
+    this.number = abs(this).lt(abs(bigNumber))
+      ? BigNumber._subtract(bigNumber, this)
+      : BigNumber._subtract(this, bigNumber);
+    return this;
+  },
+
+  multiply(number) {
+    if (typeof number === "undefined") return this;
+    const bigNumber = BigNumber(number);
+
+    if (this.isZero() || bigNumber.isZero()) return BigNumber(0);
+
+    this.sign *= bigNumber.sign;
+
+    const result = [];
+    for (let index = 0; index &lt; this.number.length; index++) {
+      for (
+        let remainder = 0, givenNumberIndex = 0;
+        givenNumberIndex &lt; bigNumber.number.length || remainder > 0;
+        givenNumberIndex++
+      ) {
+        remainder +=
+          (result[index + givenNumberIndex] || 0) +
+          this.number[index] * (bigNumber.number[givenNumberIndex] || 0);
+        result[index + givenNumberIndex] = remainder % 10;
+        remainder = Math.floor(remainder / 10);
+      }
+    }
+
+    this.number = result;
+    return this;
+  },
+
+  divide(number) {
+    if (typeof number === "undefined") return this;
+
+    const bigNumber = BigNumber(number);
+
+    if (bigNumber.isZero()) {
+      this.number = errors["divisionZero"];
+      return this;
+    } else if (this.isZero()) {
+      this.rest = BigNumber(0);
+      return this;
+    }
+
+    this.sign *= bigNumber.sign;
+    bigNumber.sign = 1;
+
+    if (bigNumber.number.length === 1 &amp;&amp; bigNumber.number[0] === 1) {
+      this.rest = BigNumber(0);
+      return this;
+    }
+    const result = [];
+    const rest = BigNumber(0);
+    for (let index = this.number.length - 1; index >= 0; index--) {
+      rest.multiply(10);
+      rest.number[0] = this.number[index];
+      result[index] = 0;
+      while (bigNumber.lte(rest)) {
+        result[index]++;
+        rest.subtract(bigNumber);
+      }
+    }
+
+    let index = 0;
+    const length = result.length - 1;
+    while (result[length - index] === 0 &amp;&amp; length - index > 0) {
+      index++;
+    }
+    if (index > 0) {
+      result.splice(-index);
+    }
+
+    this.rest = rest;
+    this.number = result;
+    return this;
+  },
+
+  mod(number) {
+    return this.divide(number).rest;
+  },
+
+  power(number) {
+    if (typeof number === "undefined") return;
+    if (!isValidType(number)) {
+      this.number = errors["invalid"];
+      return;
+    }
+
+    const bigNumberPower = BigNumber(number);
+    if (bigNumberPower.isZero()) return BigNumber(1);
+    if (bigNumberPower.val() === "1") return this;
+
+    const bigNumber = BigNumber(this);
+
+    this.number = [1];
+    while (bigNumberPower.gt(0)) {
+      if (!bigNumberPower.isEven()) {
+        this.multiply(bigNumber);
+        bigNumberPower.subtract(1);
+        continue;
+      }
+      bigNumber.multiply(bigNumber);
+      bigNumberPower.div(2);
+    }
+    return this;
+  },
+
+  abs() {
+    this.sign = 1;
+    return this;
+  },
+
+  isZero() {
+    var index;
+    for (index = 0; index &lt; this.number.length; index++) {
+      if (this.number[index] !== 0) {
+        return false;
+      }
+    }
+    return true;
+  },
+
+  toString() {
+    if (typeof this.number === "string") return this.number;
+    let str = "";
+    for (let index = this.number.length - 1; index >= 0; index--) {
+      str += this.number[index];
+    }
+    return this.sign > 0 ? str : "-" + str;
+  },
+  plus: this.add,
+  minus: this.subtract,
+  div: this.divide,
+  mult: this.multiply,
+  pow: this.power,
+  valueOf: this.toString,
+};
+
+BigNumber._add = function (a, b) {
+  const length = Math.max(a.number.length, b.number.length);
+  for (let index = 0, remainder = 0; index &lt; length || remainder > 0; index++) {
+    remainder += (a.number[index] || 0) + (b.number[index] || 0);
+    a.number[index] = remainder % 10;
+    remainder = Math.floor(remainder / 10);
+  }
+  return a.number;
+};
+
+BigNumber._subtract = function (a, b) {
+  for (
+    let index = 0, remainder = 0, length = a.number.length;
+    index &lt; length;
+    index++
+  ) {
+    a.number[index] -= (b.number[index] || 0) + remainder;
+    remainder = a.number[index] &lt; 0 ? 1 : 0;
+    a.number[index] += remainder * 10;
+  }
+  let index = 0;
+  const length = a.number.length - 1;
+  while (a.number[length - index] === 0 &amp;&amp; length - index > 0) {
+    index++;
+  }
+  if (index > 0) {
+    a.number.splice(-index);
+  }
+  return a.number;
+};
+
+export default BigNumber;
+</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.5</a> on Fri Aug 14 2020 15:57:17 GMT+0800 (GMT+08:00) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>

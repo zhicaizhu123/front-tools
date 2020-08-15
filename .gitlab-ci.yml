@@ -1,0 +1,29 @@
+image: node:8.11.2
+
+building:
+  stage: build
+  script:
+    - npm i
+    - npm run docs
+  artifacts:
+    expire_in: 3 days
+    paths:
+      - dist
+  only:
+    - master
+  tags:
+    - gz-front-tools
+
+pages:
+  stage: deploy
+  script:
+    - mkdir public
+    - mv dist/* public
+  artifacts:
+    expire_in: 3 days
+    paths:
+      - public
+  only:
+    - master
+  tags:
+    - gz-front-tools
